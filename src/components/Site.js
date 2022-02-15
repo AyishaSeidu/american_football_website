@@ -33,6 +33,6 @@ grid-template-rows: 4rem 1fr;
 grid-template-areas: 
 'nav'
 'details';
-
+color: gray;
 padding: 1rem 1rem 0rem 1rem;
 `;
