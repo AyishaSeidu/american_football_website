@@ -6,6 +6,26 @@ function Navbar() {
   return (
    <Bar>
        <MenuContainer> <Menu size={30}/></MenuContainer>
+
+       <NavItems>
+           <>
+           <LeftNavItems>
+               <Item>expert</Item>
+               <Item>benefits</Item>
+               <Item>testimonials</Item>
+           </LeftNavItems>
+           </>
+
+<>
+<RightNavItems>
+               <Item>rates</Item>
+               <Item>program</Item>
+               <Item>contacts</Item>
+           </RightNavItems>
+</>
+
+     
+       </NavItems>
        <PhoneContainer> <PhoneCall size={30}/></PhoneContainer>
    </Bar>
   )
@@ -52,3 +72,32 @@ height: 100%;
     color: red;
 }
 `
+const NavItems = styled.div`
+grid-area: navItems;
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+height: 100%;
+`;
+
+const LeftNavItems = styled.ul`
+display: flex;
+list-style: none;
+//justify-content: space-between;
+`;
+const RightNavItems = styled.ul`
+display: flex;
+list-style: none;
+justify-self: flex-end;
+`;
+
+const Item = styled.li`
+display: flex;
+margin: auto 1rem;
+cursor: pointer;
+:hover {
+    border: 0.1rem solid red;
+    font-size: 1.2rem;
+}
+`;
