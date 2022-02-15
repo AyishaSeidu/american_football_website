@@ -2,11 +2,14 @@ import React from 'react'
 import styled from '@emotion/styled';
 import Navbar
  from './Navbar';
+ import Content from './Content';
+
 function Site() {
   return (
     <Canvas>
         <Container>
             <Navbar/>
+            <Content/>
         </Container>
     </Canvas>
   )
@@ -32,7 +35,7 @@ display: grid;
 grid-template-rows: 4rem 1fr;
 grid-template-areas: 
 'nav'
-'details';
+'content';
 color: gray;
 padding: 1rem 1rem 0rem 1rem;
 `;
