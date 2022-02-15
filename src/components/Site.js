@@ -1,10 +1,13 @@
-import styled from '@emotion/styled'
 import React from 'react'
-
+import styled from '@emotion/styled';
+import Navbar
+ from './Navbar';
 function Site() {
   return (
     <Canvas>
-        <Container></Container>
+        <Container>
+            <Navbar/>
+        </Container>
     </Canvas>
   )
 }
