@@ -32,11 +32,13 @@ const CompanyName = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: space-around;
-font-size: 5vw;
+text-align: left;
+font-size: 6vw;
 color: white;
 font-weight: bold;
-width: 90%;
+width: 95%;
 height: 70%;
 background-color: black;
 margin: 0.5rem auto;
+letter-spacing: 0.5rem;
 `;
