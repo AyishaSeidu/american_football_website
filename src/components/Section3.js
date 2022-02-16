@@ -5,7 +5,7 @@ import {Section,BoldDescription, NormalText, RedCircle, Values, ValueDescription
 function Section3() {
   return (
     
-<Section> 
+<Section sectionName="section3" > 
 <div> 
 <span> 20</span> 
 <span> More than 20 video lessons with practical exercises</span> 

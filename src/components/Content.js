@@ -25,7 +25,9 @@ color: rgba(0,0,0,0.7);
 grid-area: content;
 width: 100%;
 height: 100%;
-display: flex;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas: 'section1 section2 section3';
 border: 0.15rem solid black;
 border-top: 0rem;
 

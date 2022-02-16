@@ -1,14 +1,13 @@
 import styled from "@emotion/styled";
 
 export const Section = styled.div`
+grid-area: ${({sectionName})=>sectionName};
 display: flex;
 flex-direction: column;
 max-height: 100%;
 width: 100%;
 justify-content: space-around;
 border-left: 0.15rem solid black;
-//border-bottom: 0.15rem solid black;
-
 `;
 
 export const BoldDescription = styled.div`
@@ -54,7 +53,7 @@ height: 10rem;
 background-color: black;
 align-self: center;
 color: white;
-margin: auto;
+margin: 0rem auto;
 justify-content: space-between;
 align-self: flex-end;
 `;
