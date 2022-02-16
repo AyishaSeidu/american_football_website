@@ -38,4 +38,5 @@ grid-template-areas:
 'content';
 color: gray;
 padding: 1rem 1rem 0rem 1rem;
+overflow: auto;
 `;
