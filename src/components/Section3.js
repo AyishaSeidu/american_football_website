@@ -24,7 +24,7 @@ function Section3() {
 </Statistic>
 </Container>
 
-<Values>
+<Values value="value3">
 <ValueNumber> 03 </ValueNumber>
  <ValueIcon style={{transfrom: "rotate(60deg)"}}>
      <Square size={40}/>

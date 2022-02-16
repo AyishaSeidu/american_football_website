@@ -11,7 +11,8 @@ function Section2() {
   <span>AMERICAN</span>
   <span>FOOTBALL</span>
 </CompanyName>
-<Values>
+
+<Values value="value2">
 <ValueNumber> 02 </ValueNumber>
  <ValueIcon>
      <Triangle size={40}/>

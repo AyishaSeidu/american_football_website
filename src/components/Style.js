@@ -47,6 +47,7 @@ transform: rotate(-30deg)
 `;
 
 export const Values = styled.div`
+grid-area: ${({value})=>value};
 display: flex;
 flex-direction: column;
 width: 90%;

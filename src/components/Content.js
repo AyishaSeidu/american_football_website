@@ -27,7 +27,10 @@ width: 100%;
 height: 100%;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
-grid-template-areas: 'section1 section2 section3';
+grid-template-rows: 1fr 10rem;
+grid-template-areas: 
+'section1 section2 section3'
+'value1 value2 value3';
 border: 0.15rem solid black;
 border-top: 0rem;
 overflow-y: auto;

@@ -17,7 +17,7 @@ personal training with <Name>Alex</Name> </NormalText>
 </DescriptionContainer>
 
 
-<Values>
+<Values value="value1">
 
 <ValueNumber> 01 </ValueNumber>
 
