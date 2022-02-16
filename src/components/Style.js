@@ -8,6 +8,9 @@ max-height: 100%;
 width: 100%;
 justify-content: space-around;
 border-left: 0.15rem solid black;
+
+@media (max-width: 600px) {
+height: 90vh;
 `;
 
 export const BoldDescription = styled.div`

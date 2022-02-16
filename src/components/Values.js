@@ -61,5 +61,9 @@ grid-area: values;
 width: 100%;
 display: grid;
 grid-template-columns: repeat(3, 1fr);
-
+@media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1rem;
+  };
 `;

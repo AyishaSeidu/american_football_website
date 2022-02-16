@@ -32,6 +32,18 @@ grid-template-rows: 1fr 10rem;
 grid-template-areas: 
 'section1 section2 section3'
 'values values values';
+
+@media (max-width: 600px) {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr) 10rem;
+  grid-template-areas: 
+'section2'
+ 'section1' 
+ 'section3'
+ 'values';
+ max-width: 100vw;
+};
+
 border: 0.15rem solid black;
 border-top: 0rem;
 overflow-y: auto;

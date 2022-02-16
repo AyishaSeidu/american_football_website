@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import {Triangle} from  'react-feather';
-import {Section, Values, ValueDescription, ValueIcon, ValueName, ValueNumber} from './Style'
+import {Section} from './Style'
 
 function Section2() {
   return (
@@ -23,7 +22,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-around;
 text-align: left;
-font-size: 6vw;
+font-size: 2.5rem;
 color: white;
 font-weight: bold;
 width: 95%;
