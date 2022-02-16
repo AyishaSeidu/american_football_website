@@ -12,17 +12,6 @@ function Section2() {
   <span>FOOTBALL</span>
 </CompanyName>
 
-<Values value="value2">
-<ValueNumber> 02 </ValueNumber>
- <ValueIcon>
-     <Triangle size={40}/>
- </ValueIcon>
-<ValueName > Originality</ValueName>
-<>
-<ValueDescription>  We appreciate and develop </ValueDescription>
-<ValueDescription> individual characteristics footballer</ValueDescription>
-</>
-</Values>
 </Section>
   )
 }

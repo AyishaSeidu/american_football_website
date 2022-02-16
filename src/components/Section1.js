@@ -16,23 +16,6 @@ personal training with <Name>Alex</Name> </NormalText>
 <RedCircle> Become a soccer star</RedCircle>
 </DescriptionContainer>
 
-
-<Values value="value1">
-
-<ValueNumber> 01 </ValueNumber>
-
- <ValueIcon>
-     <Codesandbox size={40}/>
- </ValueIcon>
-
-<ValueName > Self Improvement</ValueName>
-<>
-
-<ValueDescription> Every footballer getting</ValueDescription>
-<ValueDescription> better version of myself</ValueDescription>
-</>
-</Values>
-
 </Section>
 
   )

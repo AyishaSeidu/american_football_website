@@ -46,8 +46,7 @@ text-align: center;
 transform: rotate(-30deg)
 `;
 
-export const Values = styled.div`
-grid-area: ${({value})=>value};
+export const Value = styled.div`
 display: flex;
 flex-direction: column;
 width: 90%;
@@ -55,7 +54,7 @@ height: 10rem;
 background-color: black;
 align-self: center;
 color: white;
-margin: 0rem auto;
+margin: auto;
 justify-content: space-between;
 align-self: flex-end;
 align-items: center;

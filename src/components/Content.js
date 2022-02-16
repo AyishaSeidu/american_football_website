@@ -3,6 +3,7 @@ import React from 'react';
 import Section1 from './Section1';
 import Section2 from './Section2';
 import Section3 from './Section3';
+import Values from './Values';
 
 
 function Content() {
@@ -12,7 +13,7 @@ function Content() {
 <Section1/>
 <Section2/>
 <Section3/>
-
+<Values/>
 
     </Container>
   )
@@ -30,7 +31,7 @@ grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows: 1fr 10rem;
 grid-template-areas: 
 'section1 section2 section3'
-'value1 value2 value3';
+'values values values';
 border: 0.15rem solid black;
 border-top: 0rem;
 overflow-y: auto;

@@ -24,17 +24,6 @@ function Section3() {
 </Statistic>
 </Container>
 
-<Values value="value3">
-<ValueNumber> 03 </ValueNumber>
- <ValueIcon style={{transfrom: "rotate(60deg)"}}>
-     <Square size={40}/>
- </ValueIcon>
-<ValueName > Purposeful</ValueName>
-<>
-<ValueDescription>  Every footballer is constantly </ValueDescription>
-<ValueDescription> sets new goals and achieve them</ValueDescription>
-</>
-</Values>
 </Section>
   )
 }
