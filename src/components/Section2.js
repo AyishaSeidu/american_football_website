@@ -32,7 +32,7 @@ const CompnanyName = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: space-around;
-font-size: 7rem;
+font-size: 5rem;
 color: white;
 font-weight: bold;
 width: 95%;

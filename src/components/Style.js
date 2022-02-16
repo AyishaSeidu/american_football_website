@@ -66,6 +66,7 @@ color: grey;
 `;
 export const ValueIcon = styled.span`
 color: crimson;
+margin-top: 0;
 `;
 export const ValueName = styled.span``;
 
