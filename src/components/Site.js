@@ -26,8 +26,8 @@ display: flex;
 
 const Container = styled.div`
 background-image: url("background.jpg");
-// background-repeat: no-repeat;
-// background-size: cover;
+font-size: 0.7rem;
+text-align: left;
 width: 90%;
 height: 90%;
 margin: auto auto 0rem auto; 
