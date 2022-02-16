@@ -26,8 +26,8 @@ function Section3() {
 
 <Values>
 <ValueNumber> 03 </ValueNumber>
- <ValueIcon>
-     <Square size={50}/>
+ <ValueIcon style={{transfrom: "rotate(60deg)"}}>
+     <Square size={40}/>
  </ValueIcon>
 <ValueName > Purposeful</ValueName>
 <>

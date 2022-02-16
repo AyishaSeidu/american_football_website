@@ -30,5 +30,5 @@ grid-template-columns: 1fr 1fr 1fr;
 grid-template-areas: 'section1 section2 section3';
 border: 0.15rem solid black;
 border-top: 0rem;
-
+overflow-y: auto;
 `;

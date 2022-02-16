@@ -7,14 +7,14 @@ function Section2() {
   return (
     <Section sectionName="section2"> 
 
-<CompnanyName>
-  <div>AMERICAN</div>
-  <div>FOOTBALL</div>
-</CompnanyName>
+<CompanyName>
+  <span>AMERICAN</span>
+  <span>FOOTBALL</span>
+</CompanyName>
 <Values>
 <ValueNumber> 02 </ValueNumber>
  <ValueIcon>
-     <Triangle size={50}/>
+     <Triangle size={40}/>
  </ValueIcon>
 <ValueName > Originality</ValueName>
 <>
@@ -28,15 +28,15 @@ function Section2() {
 
 export default Section2
 
-const CompnanyName = styled.div`
+const CompanyName = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: space-around;
-font-size: 5rem;
+font-size: 5vw;
 color: white;
 font-weight: bold;
-width: 95%;
+width: 90%;
 height: 70%;
 background-color: black;
-margin: 1rem auto;
+margin: 0.5rem auto;
 `;

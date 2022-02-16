@@ -61,16 +61,19 @@ align-self: flex-end;
 export const ValueNumber = styled.span`
 display: flex;
 align-self: flex-start;
-padding: 0.2rem;
+padding: 0.5rem;
 color: grey;
 `;
 export const ValueIcon = styled.span`
 color: crimson;
-margin-top: 0;
+top: 0;
 `;
-export const ValueName = styled.span``;
+export const ValueName = styled.span`
+font-weight: bold;
+`;
 
 export const ValueDescription = styled.span`
 font-size: 0.7rem;
 color: grey;
+padding-bottom: 0.5rem;
 `;
