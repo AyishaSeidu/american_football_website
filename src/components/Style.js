@@ -56,6 +56,7 @@ color: white;
 margin: 0rem auto;
 justify-content: space-between;
 align-self: flex-end;
+align-items: center;
 `;
 
 export const ValueNumber = styled.span`
