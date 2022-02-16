@@ -36,12 +36,12 @@ align-items: center;
 background-color: crimson;
 border: 0.1rem solid crimson;
 border-radius: 50%;
-width: 20%;
+width: 5rem;
 height:5rem;
 color: white;
 margin: 1rem;
 padding: 0.2rem;
-font-size: 0.7rem;
+text-align: center;
 transform: rotate(-30deg)
 `;
 
