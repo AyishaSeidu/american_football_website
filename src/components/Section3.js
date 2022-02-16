@@ -58,8 +58,9 @@ width: 70%;
 `;
 const StatNumber = styled.span`
 color: crimson;
-font-size: 5rem;
+font-size: 4rem;
 font-weight: bold;
+margin-right: 1rem;
 `;
 const StatDescription = styled.span`
 font-weight: bold;
