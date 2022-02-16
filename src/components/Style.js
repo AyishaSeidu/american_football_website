@@ -12,7 +12,7 @@ border-left: 0.15rem solid black;
 
 export const BoldDescription = styled.div`
 font-weight: bold;
-font-size: 1.5rem;
+font-size: 1rem;
 width: 80%;
 margin: 2rem auto;
 `
@@ -36,8 +36,9 @@ align-items: center;
 background-color: crimson;
 border: 0.1rem solid crimson;
 border-radius: 50%;
-width: 5rem;
-height:5rem;
+width: 4rem;
+height:4rem;
+font-size: 0.6rem;
 color: white;
 margin: 1rem;
 padding: 0.2rem;
