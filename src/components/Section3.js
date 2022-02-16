@@ -14,7 +14,7 @@ function Section3() {
 </Statistic>
 
 <Statistic> 
-<StatNumber> 22</StatNumber> 
+<StatNumber> 24</StatNumber> 
 <StatDescription> Access to course is available for another 24 months</StatDescription> 
 </Statistic>
 
@@ -58,7 +58,7 @@ width: 70%;
 `;
 const StatNumber = styled.span`
 color: crimson;
-font-size: 3rem;
+font-size: 5rem;
 font-weight: bold;
 `;
 const StatDescription = styled.span`
