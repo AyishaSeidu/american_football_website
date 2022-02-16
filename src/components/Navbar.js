@@ -41,7 +41,7 @@ border: 0.15rem solid black;
 display: grid;
 grid-template-columns: 5rem 1fr 5rem;
 grid-template-areas: 'menu navItems call';
-
+color: rgba(0,0,0,0.8);
 `;
 
 const MenuContainer = styled.div`
@@ -84,7 +84,6 @@ height: 100%;
 const LeftNavItems = styled.ul`
 display: flex;
 list-style: none;
-//justify-content: space-between;
 `;
 const RightNavItems = styled.ul`
 display: flex;
@@ -96,6 +95,7 @@ const Item = styled.li`
 display: flex;
 margin: auto 1rem;
 cursor: pointer;
+font-size: 0.8rem;
 :hover {
     border: 0.1rem solid red;
     font-size: 1.2rem;
