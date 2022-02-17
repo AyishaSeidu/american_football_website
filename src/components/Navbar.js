@@ -1,13 +1,21 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from '@emotion/styled';
-import {Menu, PhoneCall} from 'react-feather'
+import {css } from '@emotion/react';
+import {Menu, PhoneCall} from 'react-feather';
 
 function Navbar() {
-  return (
-   <Bar>
-       <MenuContainer> <Menu size={30}/></MenuContainer>
 
-       <NavItems>
+    
+    const [showMobilMenu, setShowMobilMenu] = useState(false);
+
+  return (
+
+   <Bar>
+       <MenuContainer> 
+           
+           <Menu size={30} onClick = {(e)=>{e.preventDefault(); setShowMobilMenu(!showMobilMenu)}}/></MenuContainer>
+
+       <NavItems show= {showMobilMenu}>
            <>
            <LeftNavItems>
                <Item>expert</Item>
@@ -26,6 +34,16 @@ function Navbar() {
 
      
        </NavItems>
+
+       <MobileNavItems show = {showMobilMenu}>
+               <Item>expert</Item>
+               <Item>benefits</Item>
+               <Item>testimonials</Item>
+               <Item>rates</Item>
+               <Item>program</Item>
+               <Item>contacts</Item>     
+       </MobileNavItems>
+
        <PhoneContainer> <PhoneCall size={30}/></PhoneContainer>
    </Bar>
   )
@@ -79,16 +97,49 @@ align-items: center;
 justify-content: space-between;
 width: 100%;
 height: 100%;
+
+
+@media (max-width: 600px) {
+    display: none;
+}
 `;
 
 const LeftNavItems = styled.ul`
 display: flex;
 list-style: none;
+
+@media (max-width: 600px)  {
+    display: block;
+}
+
 `;
 const RightNavItems = styled.ul`
 display: flex;
 list-style: none;
 justify-self: flex-end;
+@media (max-width: 600px)  {
+   disolay: block;
+}
+
+`;
+
+const MobileNavItems = styled.div`
+display: none;
+@media (max-width: 600px) {
+    grid-area: navItems;
+    ${({show})=> show===true && css`
+    display: inherit;
+    position: fixed;
+    width: 80vw;
+    height: 70vh;
+    z-index: 1;
+    background-image: url("background.jpg");
+    flex-direction: column;
+    margin-top: 4.1rem;
+`
+}
+
+}
 `;
 
 const Item = styled.li`
