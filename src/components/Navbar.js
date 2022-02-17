@@ -11,9 +11,12 @@ function Navbar() {
   return (
 
    <Bar>
-       <MenuContainer> 
+<MenuContainer> 
            
-           <Menu size={30} onClick = {(e)=>{e.preventDefault(); setShowMobilMenu(!showMobilMenu)}}/></MenuContainer>
+           <Menu size={30} onClick = {(e)=>{e.preventDefault(); setShowMobilMenu(!showMobilMenu)}}/>
+           
+           </MenuContainer>
+
 
        <NavItems show= {showMobilMenu}>
            <>
@@ -31,17 +34,15 @@ function Navbar() {
                <Item>contacts</Item>
            </RightNavItems>
 </>
-
-     
        </NavItems>
 
        <MobileNavItems show = {showMobilMenu}>
-               <Item>expert</Item>
-               <Item>benefits</Item>
-               <Item>testimonials</Item>
-               <Item>rates</Item>
-               <Item>program</Item>
-               <Item>contacts</Item>     
+               <Item onClick={(e)=>{e.preventDefault(); setShowMobilMenu(false)}}>expert</Item>
+               <Item onClick={(e)=>{e.preventDefault(); setShowMobilMenu(false)}}>benefits</Item>
+               <Item onClick={(e)=>{e.preventDefault(); setShowMobilMenu(false)}}>testimonials</Item>
+               <Item onClick={(e)=>{e.preventDefault(); setShowMobilMenu(false)}}>rates</Item>
+               <Item onClick={(e)=>{e.preventDefault(); setShowMobilMenu(false)}}>program</Item>
+               <Item onClick={(e)=>{e.preventDefault(); setShowMobilMenu(false)}}>contacts</Item>     
        </MobileNavItems>
 
        <PhoneContainer> <PhoneCall size={30}/></PhoneContainer>
@@ -76,6 +77,7 @@ height: 100%;
     color: red;
 }
 `
+
 const PhoneContainer = styled.div`
 grid-area: call;
 display: flex;
@@ -125,13 +127,11 @@ justify-self: flex-end;
 
 const showMobileNavAnimation = keyframes`
 0% {
-    //transform: translateX(-20rem);
     opacity: 0;
     width: 0vw;
     height: 0vh;
 }
 100% {
-    //transform: translateX(1rem);
     opacity: 1;
     display: inherit;
     width: 80vw;
@@ -152,8 +152,6 @@ display: none;
     justify-content: center;
     z-index: 1;
     color: black;
-    //transition: width 3s;
-    //background-image: url("background.jpg");
     background-color: seashell;
     margin-top: 4.1rem;
     animation: ${showMobileNavAnimation} 1s ease-in;
