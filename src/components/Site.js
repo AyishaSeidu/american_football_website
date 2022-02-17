@@ -39,4 +39,7 @@ grid-template-areas:
 color: gray;
 padding: 1rem 1rem 0rem 1rem;
 overflow: auto;
+
+@media (max-width: 600px) {
+  font-size: 1rem}
 `;
