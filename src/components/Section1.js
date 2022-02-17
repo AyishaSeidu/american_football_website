@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import {Codesandbox} from  'react-feather';
-import {Section,BoldDescription, NormalText, RedCircle, Values, ValueDescription, ValueIcon, ValueName, ValueNumber} from './Style'
+import {Section,BoldDescription, NormalText, RedCircle} from './Style'
 
 function Section1() {
   return (

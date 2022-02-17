@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 import React from 'react';
-import {Square} from  'react-feather';
-import {Section,BoldDescription, NormalText, RedCircle, Values, ValueDescription, ValueIcon, ValueName, ValueNumber} from './Style'
+import {Section} from './Style'
 
 function Section3() {
   return (
