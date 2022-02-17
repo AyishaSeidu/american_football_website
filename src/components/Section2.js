@@ -6,10 +6,26 @@ function Section2() {
   return (
     <Section sectionName="section2"> 
 
-<CompanyName>
-  <span>AMERICAN</span>
-  <span>FOOTBALL</span>
-</CompanyName>
+<CompanyNameContainer>
+  <Name>
+    <span>A</span>
+    <span>M</span>
+    <span>E</span>
+    <span>R</span>
+    <span>I</span>
+    <span>C</span>
+    <span>A</span>
+  </Name>
+  <Name>
+    <span>F</span>
+    <span>O</span>
+    <span>O</span>
+    <span>T</span>
+    <span>B</span>
+    <span>A</span>
+    <span>L</span>
+    <span>L</span>
+  </Name></CompanyNameContainer>
 
 </Section>
   )
@@ -17,17 +33,26 @@ function Section2() {
 
 export default Section2
 
-const CompanyName = styled.div`
+const CompanyNameContainer = styled.div`
 display: flex;
 flex-direction: column;
+justify-content: center;
+align-items: left;
+width: 95%;
+height: 100%;
+background-color: black;
+margin: 0.5rem;
+`;
+
+const Name = styled.span`
+display: flex;
 justify-content: space-around;
-text-align: left;
-font-size: 2.5rem;
+align-self: left;
+width: 100%;
+height: 30%;
+font-size: 4rem;
 color: white;
 font-weight: bold;
-width: 95%;
-height: 70%;
-background-color: black;
-margin: 0.5rem auto;
-letter-spacing: 0.5rem;
+//margin: 0.5rem;
+//padding: 0.5rem;
 `;

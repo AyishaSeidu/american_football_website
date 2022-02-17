@@ -4,13 +4,12 @@ export const Section = styled.div`
 grid-area: ${({sectionName})=>sectionName};
 display: flex;
 flex-direction: column;
-max-height: 100%;
+height: 100%;
 width: 100%;
-justify-content: space-around;
+//justify-content: space-around;
 border-left: 0.15rem solid black;
-
 @media (max-width: 600px) {
-height: 90vh;
+height: 100vh;
 `;
 
 export const BoldDescription = styled.div`
