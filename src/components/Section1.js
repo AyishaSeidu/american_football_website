@@ -12,7 +12,7 @@ function Section1() {
 Learn all the basic elements of football and get the opportunity to win
 personal training with <Name>Alex</Name> </NormalText>
 
-<RedCircle> <CircleText>Become a soccer star</CircleText></RedCircle>
+<RedCircle> Become a soccer star</RedCircle>
 </DescriptionContainer>
 
 </Section>
@@ -53,16 +53,9 @@ border: 0.1rem solid crimson;
 border-radius: 100%;
 width: 4rem;
 height: 4rem;
-//line-height: 4rem;
 font-size: 0.6rem;
 color: white;
 margin: 1rem;
 text-align: left;
 transform: rotate(-30deg);
 `;
-
-const CircleText = styled.span`
-//max-height: 50%;
-//display: box;
-//line-height: 1rem;
-`

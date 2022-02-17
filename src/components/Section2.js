@@ -15,6 +15,7 @@ function Section2() {
     <span>I</span>
     <span>C</span>
     <span>A</span>
+    <span>N</span>
   </Name>
   <Name>
     <span>F</span>

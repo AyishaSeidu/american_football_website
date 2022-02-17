@@ -6,9 +6,7 @@ display: flex;
 flex-direction: column;
 height: 100%;
 width: 100%;
-//justify-content: space-around;
 border-left: 0.15rem solid black;
-
 @media (max-width: 600px) {
 height: 100vh;
 border: none;
