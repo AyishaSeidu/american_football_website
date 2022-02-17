@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import {Section,BoldDescription, NormalText, RedCircle} from './Style'
+import {Section,BoldDescription, NormalText} from './Style'
 
 function Section1() {
   return (
@@ -12,7 +12,7 @@ function Section1() {
 Learn all the basic elements of football and get the opportunity to win
 personal training with <Name>Alex</Name> </NormalText>
 
-<RedCircle> Become a soccer star</RedCircle>
+<RedCircle> <CircleText>Become a soccer star</CircleText></RedCircle>
 </DescriptionContainer>
 
 </Section>
@@ -41,4 +41,28 @@ height: 70%;
 display: flex;
 flex-direction: column;
 justify-content: space-around;
+margin: auto;
 `;
+
+export const RedCircle = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: crimson;
+border: 0.1rem solid crimson;
+border-radius: 100%;
+width: 4rem;
+height: 4rem;
+//line-height: 4rem;
+font-size: 0.6rem;
+color: white;
+margin: 1rem;
+text-align: left;
+transform: rotate(-30deg);
+`;
+
+const CircleText = styled.span`
+//max-height: 50%;
+//display: box;
+//line-height: 1rem;
+`

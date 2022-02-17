@@ -18,8 +18,12 @@ function Site() {
 export default Site
 
 const Canvas = styled.div`
-height: 100vh;
-width: 100vw;
+//height: 100vh;
+//width: 100vw;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
 background-color: seashell;
 display: flex;
 `;
@@ -30,16 +34,15 @@ font-size: 0.7rem;
 text-align: left;
 width: 90%;
 height: 90%;
-margin: auto auto 0rem auto; 
+margin: 1rem auto 0rem auto; 
 display: grid;
-grid-template-rows: 4rem 1fr;
+grid-template-rows: 4rem 100vh;
 grid-template-areas: 
 'nav'
 'content';
 color: gray;
 padding: 1rem 1rem 0rem 1rem;
-overflow: auto;
-
+//overflow-x: auto;
 @media (max-width: 600px) {
   font-size: 1rem}
 `;
