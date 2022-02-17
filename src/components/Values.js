@@ -6,7 +6,8 @@ import {Codesandbox, Triangle, Square} from  'react-feather';
 function Values() {
   return (
     <ValuesContainer>
-        <>
+
+        <SOmeDiv>
         <Value >
 <ValueNumber> 01 </ValueNumber>
  <ValueIcon>
@@ -16,10 +17,10 @@ function Values() {
 <ValueDescription> Every footballer getting</ValueDescription>
 <ValueDescription> better version of myself</ValueDescription>
 </Value>
-        </>
+        </SOmeDiv>
 
 
-<>
+<SOmeDiv>
 
 <Value >
 <ValueNumber> 02 </ValueNumber>
@@ -33,9 +34,9 @@ function Values() {
 </>
 </Value>
 
-</>
+</SOmeDiv>
 
-<>
+<SOmeDiv>
 <Value>
 <ValueNumber> 03 </ValueNumber>
  <ValueIcon style={{transfrom: "rotate(60deg)"}}>
@@ -47,7 +48,7 @@ function Values() {
 <ValueDescription> sets new goals and achieve them</ValueDescription>
 </>
 </Value>
-</>
+</SOmeDiv>
 
 
     </ValuesContainer>
@@ -66,4 +67,9 @@ grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 1rem;
   };
+`;
+
+const SOmeDiv = styled.div`
+width: 100%;
+border-left: 0.1re solid black;
 `;

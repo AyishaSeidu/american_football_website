@@ -12,6 +12,7 @@ border-left: 0.15rem solid black;
 @media (max-width: 600px) {
 height: 100vh;
 border: none;
+}
 `;
 
 export const BoldDescription = styled.div`

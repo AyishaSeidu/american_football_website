@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import styled from '@emotion/styled';
 import {css, keyframes} from '@emotion/react';
+import styled from '@emotion/styled';
 import {Menu, PhoneCall} from 'react-feather';
 
 function Navbar() {
