@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import styled from '@emotion/styled';
-import {css } from '@emotion/react';
+import {css, keyframes} from '@emotion/react';
 import {Menu, PhoneCall} from 'react-feather';
 
 function Navbar() {
@@ -123,19 +123,33 @@ justify-self: flex-end;
 
 `;
 
+const showMobileNavAnimation = keyframes`
+0% {
+    transform: translateX(-20rem);
+}
+100% {
+    transform: translateX(1rem);
+
+};
+`;
+
 const MobileNavItems = styled.div`
 display: none;
 @media (max-width: 600px) {
     grid-area: navItems;
     ${({show})=> show===true && css`
     display: inherit;
+    flex-direction: column;
     position: fixed;
     width: 80vw;
     height: 70vh;
+    justify-content: center;
     z-index: 1;
-    background-image: url("background.jpg");
-    flex-direction: column;
+    color: black;
+    //background-image: url("background.jpg");
+    background-color: seashell;
     margin-top: 4.1rem;
+    animation: ${showMobileNavAnimation} 1.5s ease-in;
 `
 }
 
