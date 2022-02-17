@@ -7,7 +7,7 @@ function Values() {
   return (
     <ValuesContainer>
 
-        <SOmeDiv>
+        <Footer>
         <Value >
 <ValueNumber> 01 </ValueNumber>
  <ValueIcon>
@@ -17,10 +17,10 @@ function Values() {
 <ValueDescription> Every footballer getting</ValueDescription>
 <ValueDescription> better version of myself</ValueDescription>
 </Value>
-        </SOmeDiv>
+        </Footer>
 
 
-<SOmeDiv>
+<Footer>
 
 <Value >
 <ValueNumber> 02 </ValueNumber>
@@ -34,9 +34,9 @@ function Values() {
 </>
 </Value>
 
-</SOmeDiv>
+</Footer>
 
-<SOmeDiv>
+<Footer>
 <Value>
 <ValueNumber> 03 </ValueNumber>
  <ValueIcon style={{transfrom: "rotate(60deg)"}}>
@@ -48,7 +48,7 @@ function Values() {
 <ValueDescription> sets new goals and achieve them</ValueDescription>
 </>
 </Value>
-</SOmeDiv>
+</Footer>
 
 
     </ValuesContainer>
@@ -69,7 +69,14 @@ grid-template-columns: repeat(3, 1fr);
   };
 `;
 
-const SOmeDiv = styled.div`
+const Footer = styled.div`
+height: 100%;
 width: 100%;
-border-left: 0.1re solid black;
+border-left: 0.15rem solid black;
+&:first-child {
+    border: none;
+}
+@media (max-width: 600px) {
+border: none;
+}
 `;
