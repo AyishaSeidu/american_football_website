@@ -125,11 +125,17 @@ justify-self: flex-end;
 
 const showMobileNavAnimation = keyframes`
 0% {
-    transform: translateX(-20rem);
+    //transform: translateX(-20rem);
+    opacity: 0;
+    width: 0vw;
+    height: 0vh;
 }
 100% {
-    transform: translateX(1rem);
-
+    //transform: translateX(1rem);
+    opacity: 1;
+    display: inherit;
+    width: 80vw;
+    height: 70vh;
 };
 `;
 
@@ -146,10 +152,11 @@ display: none;
     justify-content: center;
     z-index: 1;
     color: black;
+    //transition: width 3s;
     //background-image: url("background.jpg");
     background-color: seashell;
     margin-top: 4.1rem;
-    animation: ${showMobileNavAnimation} 1.5s ease-in;
+    animation: ${showMobileNavAnimation} 1s ease-in;
 `
 }
 
